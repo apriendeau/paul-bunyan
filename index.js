@@ -1,16 +1,15 @@
 var path   = require('path')
 var bunyan = require('bunyan')
 var fs     = require('fs')
-var config = require('config')
 
 function Logger() {}
 
-Logger.prototype.init = function () {
-  var loggerName = config.log.name
+Logger.prototype.init = function (opts) {
+  var loggerName = opts.name
 
   var loggerOpts = {
     name: loggerName,
-    streams: this.getStreams(),
+    streams: this.getStreams(opts),
     serializers: this.getSerializers(),
   }
 
@@ -25,8 +24,7 @@ Logger.prototype.getSerializers = function () {
   var serializers = {
     req: reqSerializer,
     res: resSerializer,
-    error: bunyan.stdSerializers.err,
-    logger: dummy
+    error: bunyan.stdSerializers.err
   }
   return serializers
   
@@ -45,32 +43,30 @@ Logger.prototype.getSerializers = function () {
       body: res.body
     }
   }
-
-  function dummy() {}
 }
 
-Logger.prototype.getStreams = function () {
+Logger.prototype.getStreams = function (opts) {
   var filePath
   var streams = []
-  if (config.log.stdout) {
+  if (opts.stdout) {
     streams.push({
       stream: process.stdout,
-      level: config.log.stdout.level
+      level: opts.stdout.level
     })
   }
 
-  if (config.log.file && config.log.file.path) {
-    var fileName = config.log.name + '.log'
+  if (opts.file && opts.file.path) {
+    var fileName = opts.name + '.log'
 
     if (process.env.PM2_NAME) {
       fileName = process.env.PM2_NAME + '.log'
     }
 
-    filePath = path.resolve(config.log.file.path, fileName)
+    filePath = path.resolve(opts.file.path, fileName)
     // see http://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback 
     //  bfor a+ flag description
     streams.push({
-      level: config.log.file.level,
+      level: opts.file.level,
       stream: fs.createWriteStream(filePath, {flags: 'a+'}) 
     })
 

@@ -14,9 +14,7 @@
   "author": "Team Indigo",
   "license": "MIT",
   "dependencies": {
-    "bunyan": "^0.23.1",
-    "config": "^0.4.36",
-    "yaml": "^0.2.3"
+    "bunyan": "^0.23.1"
   },
   "devDependencies": {
     "blanket": "^1.1.6",

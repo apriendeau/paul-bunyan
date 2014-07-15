@@ -1,4 +1,0 @@
-log:
-  name: 'paul-bunyan-logger'
-  stdout:
-    level: 'info'

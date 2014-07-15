@@ -10,9 +10,6 @@ develop: build config
 
 deploy: clean build-production
 
-config:
-	@if [ ! -e config/default.yml ]; then cp config/default.example.yml config/default.yml; fi;
-
 clean:
 	@echo "-----> remove node_modules folder"
 	@rm -rf node_modules || true

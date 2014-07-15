@@ -1,4 +1,4 @@
-var logger        = require('../index').init()
+var logger        = require('../index').init({name: 'paul-bunyan-logger', stdout: { level: 'info' }})
 var expect        = require('chai').expect
 var captureStream = require('./hook')
 
