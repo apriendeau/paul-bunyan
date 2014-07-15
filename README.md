@@ -5,8 +5,7 @@ A bunyan initializer so we dont have to keep repeating the code!
 ## Usage
 
 ```javascript
-  var paulBunyan = require('paul-bunyan')
-  var logger = paulBunyan.init()
+  var logger = require('paul-bunyan').init()
 
   logger.log({}, 'some log message!')
 ```
