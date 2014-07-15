@@ -2,7 +2,7 @@
 
 ![paul bunyan](img/1386914471_17mkqox_iwfc2q0.gif)
 
-A bunyan initializer so we dont have to keep repeating the code!
+A bunyan initializer so we can crank it like a chainsaw!
 
 ## Usage
 
