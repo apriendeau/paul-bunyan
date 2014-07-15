@@ -1,5 +1,7 @@
 # paul-bunyan
 
+![paul bunyan](http://cdn1.akamai.coub.com/coub/simple/cw_gif_big/242667cc445/51fd06a6956c544e957f1/1386914471_17mkqox_iwfc2q0.gif)
+
 A bunyan initializer so we dont have to keep repeating the code!
 
 ## Usage
