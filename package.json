@@ -1,0 +1,20 @@
+{
+  "name": "paul-bunyan",
+  "version": "0.0.1",
+  "description": "A module to initialize a logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "bunyan",
+    "logging",
+    "logger"
+  ],
+  "author": "Team Indigo",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^0.23.1",
+    "config": "^0.4.36"
+  }
+}
