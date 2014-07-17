@@ -10,7 +10,7 @@ Add it to your package.json, like so:
 ```json
 {
   "dependencies": {
-    "paul-bunyan": "itriage/paul-bunyan"
+    "paul-bunyan": "git+ssh://git@github.com/itriage/paul-bunyan.git"
   }
 }
 ```
