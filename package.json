@@ -1,17 +1,17 @@
 {
   "name": "paul-bunyan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module to initialize a logger",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "make test"
   },
   "keywords": [
     "bunyan",
     "logging",
     "logger"
   ],
-  "author": "Team Indigo",
+  "author": "Austin Riendeau",
   "license": "MIT",
   "dependencies": {
     "bunyan": "^0.23.1"
