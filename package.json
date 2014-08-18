@@ -1,6 +1,6 @@
 {
   "name": "paul-bunyan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A module to initialize a logger",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,11 @@
     "logging",
     "logger"
   ],
-  "author": "Austin Riendeau",
+  "author": "Austin Riendeau <austin@apriendeau.com>",
+  "contributors": [
+    "Noah Isaacson <noah@nisaacson.com>",
+    "Avi Weinstock-Herman <avi@wasbazi.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "bunyan": "^0.23.1"
@@ -20,5 +24,11 @@
     "blanket": "^1.1.6",
     "chai": "^1.9.1",
     "mocha": "^1.20.1"
+  },
+  "repository":"apriendeau/paul-bunyan",
+  "homepage":"https://github.com/apriendeau/paul-bunyan",
+  "bugs":{
+    "url": "https://github.com/apriendeau/paul-bunyan/issues",
+    "email": "austin@apriendeau.com"
   }
 }
