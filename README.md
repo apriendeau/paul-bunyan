@@ -7,13 +7,7 @@ A bunyan initializer so we can crank it like a chainsaw!
 ## Usage
 
 Add it to your package.json, like so:
-```json
-{
-  "dependencies": {
-    "paul-bunyan": "git+ssh://git@github.com/itriage/paul-bunyan.git"
-  }
-}
-```
+`npm install --save paul-bunyan`
 
 then use this it like this:
 
