@@ -1,7 +1,7 @@
 {
   "name": "paul-bunyan",
-  "version": "0.0.4",
-  "description": "A module to initialize a logger",
+  "version": "0.0.5",
+  "description": "A module to initialize a bunyan instance.",
   "main": "index.js",
   "scripts": {
     "test": "make test"
