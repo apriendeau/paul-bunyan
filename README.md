@@ -1,6 +1,6 @@
 # paul-bunyan
 
-![paul bunyan](img/1386914471_17mkqox_iwfc2q0.gif)
+![paul bunyan](https://github.com/apriendeau/paul-bunyan/raw/master/img/1386914471_17mkqox_iwfc2q0.gif)
 
 A bunyan initializer so we can crank it like a chainsaw!
 
