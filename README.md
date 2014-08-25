@@ -1,6 +1,7 @@
 # paul-bunyan
 ![deps](http://img.shields.io/david/dev/apriendeau/paul-bunyan.svg?style=flat-square)
 
+[![NPM](https://nodei.co/npm/paul-bunyan.png?compact=true)](https://nodei.co/npm/paul-bunyan/)
 
 ![paul bunyan](https://github.com/apriendeau/paul-bunyan/raw/master/img/1386914471_17mkqox_iwfc2q0.gif)
 

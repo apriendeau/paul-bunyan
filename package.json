@@ -25,10 +25,16 @@
     "chai": "^1.9.1",
     "mocha": "^1.20.1"
   },
-  "repository":"apriendeau/paul-bunyan",
-  "homepage":"https://github.com/apriendeau/paul-bunyan",
-  "bugs":{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apriendeau/paul-bunyan"
+  },
+  "homepage": "https://github.com/apriendeau/paul-bunyan",
+  "bugs": {
     "url": "https://github.com/apriendeau/paul-bunyan/issues",
     "email": "austin@apriendeau.com"
+  },
+  "directories": {
+    "test": "test"
   }
 }
